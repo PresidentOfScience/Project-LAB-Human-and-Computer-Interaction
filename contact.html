@@ -1,0 +1,94 @@
+<!-- Original code created by Fendy Wijaya (2602092150) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - guarJIan</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo-guarJIan">
+                <img src="/Assets/guarJIan Logo.png" alt="guarJIan" width="200px">
+            </div>
+            <div class="hamburger">
+                <img src="/Assets/Hamburger Icon.png" alt="" srcset="">
+            </div>
+            <ul class="list-menu" id="menu-list">
+                <a href="index.html">Home</a>
+                <a href="promotion.html">Promotion</a>
+                <a href="product.html">Product</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form class="form-control">
+                <h1>Hubungi kami dengan mengisi formulir berikut</h1>
+                <div class="main-form">
+                    <div class="name form">
+                        <label for="name" class="title">Nama</label>
+                        <input type="text" name="name" class="input" id="name">
+                    </div>
+                    <div class="email form">
+                        <label for="email" class="title">Email</label>
+                        <input type="text" name="email" class="input" id="email">
+                    </div>
+                    <div class="password form">
+                        <label for="pw" class="title">Kata Sandi</label>
+                        <input type="password" name="pw"class="input" id="pw">
+                    </div>
+                    <div class="address form">
+                        <label for="address "class="title">Alamat</label>
+                        <input type="text" name="address" class="input" id="address">
+                    </div>
+                    <div class="comment form">
+                        <label for="Kendala" class="title">Kendala</label>
+                        <input type="text" name="address" class="input" id="comment">
+                    </div>
+                    <div class="term">
+                        <input type="checkbox" name="address"  id="term">
+                        <label for="term">Saya menyetujui segala persyaratan dan ketentuan yang berlaku</label>
+                    </div>
+                    <div class="button">
+                        <button id="submit">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="bantuan-panduan">
+            <span>Bantuan dan Panduan</span>
+            <div>
+                <ul class="panduan">
+                    <li class="bantuan">Syarat dan Ketentuan</li>
+                    <li class="bantuan">Kebijakan Privasi</li>
+                    <li class="bantuan">FAQ</li>
+                    <li class="bantuan">Keamanan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hak-cipta">
+                <img src="/Assets/guarJIan Logo.png" alt="">
+                <span id="copyright">&copy; 2023 - Hak cipta dilindungi oleh Undang-undang</span> 
+        </div>
+        <div class="follow">
+            <div id="follow-us">Ikuti kami di media sosial</div>
+            <div class="follow-logo">
+                <span class="follow-fb"><img src="/Assets/Facebook Icon.png" alt="" class="follow-fb"></span>
+                <span class="follow-ig"><img src="/Assets/Instagram Icon.png" alt="" class="follow-ig"></span>
+                <span class="follow-twitter"><img src="/Assets/Twitter Icon.png" alt="" class="follow-twitter"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="form_validation.js"></script>
+<script src="hamburger.js"></script>
+</html>

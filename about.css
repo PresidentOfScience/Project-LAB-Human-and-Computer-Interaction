@@ -1,0 +1,295 @@
+/* Original code created by Fendy Wijaya (2602092150) */
+
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #f9f5ed;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+/* Navigation Bar */
+
+header {
+    z-index: 9999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #aed8b3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo-guarJIan {
+    width: 50%;
+}
+
+.list-menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu-list a {
+    font-size: 1.4vw;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #201919;
+    transition: 0.3s ease;
+    background-color: #aed8b3;
+}
+
+.navigation a:hover, .navigation a.active {
+    color: #00a095;
+}
+
+.navigation a.active::after, .navigation a:hover::after {
+    background: #00a095;
+    background-color: #aed8b3;
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* About Us Page */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 130px 0 0 50px;
+    width: 90%;
+    gap: 30px;
+}
+
+.first-content {
+    text-align: center;
+}
+
+.text-first p {
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 30px;
+    background-color: #aed8b3;
+    font-size: 14px;
+    width: 100%;
+}
+
+.second-container {
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 30px;
+    background-color: #aed8b3;
+    font-size: 14px;
+    width: 100%;
+}
+
+.box {
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 30px;
+    background-color: #aed8b3;
+}
+
+.content {
+    text-align: start;
+}
+
+.second-content {
+    width: 100%;
+    text-align: center;
+}
+
+.third-container {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.third-content {
+    width: 100%;
+}
+
+.fourth-content {
+    width: 100%;
+}
+
+.fourth-container {
+    display: flex;
+    gap: 30px;
+}
+
+.img img {
+    width:300px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.detail h4 {
+    font-size: 15px;
+}
+
+.sosmed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h5 {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.logo h5 span {
+    font-family: normal;
+}
+
+.logo img {
+    width: 20px;
+    object-fit: contain;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aed8b3;
+}
+
+.follow-us {
+    gap: 50px;
+}
+
+.hak-cipta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hak-cipta img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.follow-logo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.follow-fb, .follow-ig, .follow-twitter {
+    height: 30px;
+    cursor: pointer;
+}
+
+.bantuan, .panduan {
+    list-style-type: none;
+    font-family: 'Cocogoose', sans-serif;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (width <= 768px) {
+    /* Hamburger Menu */
+    .list-menu {
+        display: none;
+    }
+
+    .hamburger-down {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 95px;
+        text-align: center;
+        background-color: #aed8b3;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    #menu-list a {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .hamburger img {
+        width: 40px;
+    }
+}

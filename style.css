@@ -1,0 +1,394 @@
+/* Original code created by Fendy Wijaya (2602092150) */
+
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #f9f5ed;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+/* Navigation Bar */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #aed8b3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo-guarJIan {
+    width: 50%;
+}
+
+.list-menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu-list a {
+    font-size: 1.4vw;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #201919;
+    transition: 0.3s ease;
+    background-color: #aed8b3;
+}
+
+.navigation a:hover, .navigation a.active {
+    color: #00a095;
+}
+
+.navigation a.active::after, .navigation a:hover::after {
+    background: #00a095;
+    background-color: #aed8b3;
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Home Page */
+
+#welcome {
+    height: 80%;
+    margin-top: 10rem;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 25%;
+    padding: 0 50px;
+}
+
+#welcome h2 {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 34px;
+    font-weight: 250;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+#welcome button {
+    width: 250px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #ed9b91;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    background-color: #ed9b91;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 0;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+#welcome button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#welcome button:hover {
+    color: #fff;
+    background-color: #004929;
+    border: #004929;
+}
+
+.text-home {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.home-img {
+    margin-top: -4rem;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+#welcome .background-img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
+#under {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.middle-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.text-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text-content h1 {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.product-img {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.block-category {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    padding: 40px;
+}
+
+.covid-test {
+    width: max-content;
+    background-color: inherit;
+}
+
+.cleaning-tools {
+    width: max-content;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aed8b3;
+}
+
+.follow-us {
+    gap: 50px;
+}
+
+.hak-cipta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hak-cipta img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.follow-logo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.follow-fb, .follow-ig, .follow-twitter {
+    height: 30px;
+    cursor: pointer;
+}
+
+.bantuan, .panduan {
+    list-style-type: none;
+    font-family: 'Cocogoose', sans-serif;
+}
+
+
+/* Pengaturan halaman responsif */
+
+@media (width <= 768px) {
+    body {
+        width: 100%;
+        overflow-x:hidden ;
+    }
+
+    /* Hamburger Menu */
+    
+    .list-menu {
+        display: none;
+    }
+
+    .hamburger-down {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 95px;
+        text-align: center;
+        background-color: #aed8b3;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    #menu-list a {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .hamburger img {
+        width: 40px;
+    }
+
+    /* Isi utama */
+
+    .welcome {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-img img {
+        position:absolute ;
+        top: 30%;
+        left: 10%;
+        z-index: -99999;
+        opacity: 0.5;
+    }
+
+    .text-home {
+        margin-left: 100px;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .text-inside-main {
+        margin-top: 150px;
+        width: 500px;
+        text-align: center;
+        margin-left: -80px;
+    }
+
+    .text-inside-main #h2text, h4 {
+        width: 100%;        
+        font-size: 32px;
+    }
+
+    .button-beli {
+        margin-top: 120px;
+    }
+
+    .middle-title {
+        margin-top: 150px;
+    }
+
+    .block-category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
